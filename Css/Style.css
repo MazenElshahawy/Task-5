@@ -1,0 +1,544 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.rootPadding {
+    padding: 4.5rem 0;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.darkLayer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.8);
+}
+
+/*       Start   Navbar   styling          */
+
+.navbar {
+    display: flex;
+    padding: 20px 0;
+}
+
+.navLogo {
+    width: 20%;
+    padding-left: 20px;
+}
+
+.navMenu {
+    width: 70%;
+}
+
+.navMenu ul {
+    display: flex;
+    list-style: none;
+
+    justify-content: center;
+    margin-right: 50px;
+    height: 100%;
+    align-items: center;
+}
+
+.navMenu ul li {
+    padding: 0 20px;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.8);
+}
+
+.navMenu ul li .active {
+    color: #20c997;
+}
+
+.navMenu ul li a:hover {
+    color: #20c997;
+}
+
+
+/*       Start   Home-Details   styling          */
+
+.homeDetails {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.homeDetails .details {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.homeDetails .details p {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.homeDetails .details h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 30px 0;
+}
+
+.homeDetails .details span {
+    font-size: 1.3125rem;
+}
+
+.homeDetails .btn {
+    color: #20c997;
+    background-color: transparent;
+    margin: 30px 0;
+    padding: 0.8rem 2rem;
+    border-radius: 50rem;
+    border-color: #20c997;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.homeDetails .btn:hover {
+    background-color: #20c997;
+    color: #fff;
+}
+
+
+/*       Start   About   title  styling          */
+
+.about {
+    width: 100%;
+}
+
+.title {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.title h2 {
+    color: #c9d0d2;
+    font-size: 8.25rem;
+    opacity: 0.3;
+    text-transform:uppercase;
+}
+
+.title p{
+    font-size: 2.25rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+.title p span{
+height: 5px;
+background-color: #20c997; 
+width: 100%;  
+
+}
+
+.title p span::after{
+    content: "";
+    height: 2px;
+    background-color: #20c997;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:-10px auto;
+    }
+
+
+/*       Start   About   details  styling          */    
+
+.container{
+    display: flex;
+    /* background-color: aqua; */
+    padding: 1rem 4rem;
+    justify-content: space-evenly;
+}
+
+.container .biography{
+    width: 50%;
+
+    padding: 0 1rem;
+}
+
+.container .biography h3{
+    font-size: 1.25rem;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.container .biography h3 span{
+color: #20c997;
+}
+
+.container .biography p{
+    font-size: 14px;
+    padding-bottom: 15px ;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+
+.container .info{
+    width: 30%;
+    /* background-color: yellow; */
+    padding: 20px 20px 0 20px ;
+}
+
+.container .info ul{
+    list-style: none;
+    /* background-color: brown; */
+}
+
+
+
+.container .info ul li{
+padding: 10px 0;
+line-height: 1.8rem;
+}
+
+.info .btn {
+    color: #fff;
+    background-color: #20c997;
+    padding: 0.8rem 2rem;
+    margin-top: 15px ;
+    border-radius: 50rem;
+    border-color: transparent;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.counterContainer{
+    /* background-color: #20c997; */
+    width: 80%;
+    margin: 30px auto;
+}
+
+.counterContainer .counterSections{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.counterContainer .counterSections .countSec{
+    width: 25%;
+}
+
+.counterContainer .counterSections .countSec h4{
+color: #6C757D;
+font-size: 3rem;
+font-weight: 600;
+padding-bottom: 5px;
+
+}
+
+
+
+.counterContainer .counterSections .countSec p{
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 12%;
+    }
+
+/******** Start Styling Services **********/    
+
+.services {
+    width: 100%;
+    background-color: #F8F9FA;
+}
+
+.title {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.title h2 {
+    color: #c9d0d2;
+    font-size: 8.25rem;
+    opacity: 0.3;
+    text-transform:uppercase;
+}
+
+.title p{
+    font-size: 2.25rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+.title p span{
+height: 5px;
+background-color: #20c997; 
+width: 100%;  
+
+}
+
+.title p span::after{
+    content: "";
+    height: 2px;
+    background-color: #20c997;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:-10px auto;
+    }
+
+
+
+/*   styling  skills container    */    
+
+
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+
+.skill{
+    display: flex;
+    width: 50%;
+}
+
+
+
+.skill img{
+    width: 70px;
+    padding: 10px ;
+    margin:10px 10px ;
+    border: solid transparent;
+    box-shadow: 2px 1px 1px #aaaaaa;
+}
+
+.skillContent {
+   margin: 10px 10px;
+   padding: 0 20px;
+}
+
+/*  Styling resume Section */
+
+.resume{
+    width: 100%;
+    background-color: #ffff;
+
+}
+
+.resumeContainer{
+    display: flex;
+    width: 90%;
+    margin: 20px  auto;
+}
+
+.resumeContainer h3{
+    font-size: 1.50rem;
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    border: 1px solid #d0d7dd;
+    width: 90%;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 20px auto;
+}
+
+.card h5{
+    width: 20%;
+    background-color: #20c997;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 3px;
+    padding:2px 0;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card h4{
+    font-size: 1.3125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.card span{
+    color: #dc3545;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    line-height: 1.8;
+    margin-top: 0.8rem;
+}
+
+
+.score{
+    width: 90%;
+    margin: 20px  auto;
+}
+
+.score h3{
+    font-size: 1.50rem;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+
+.scoreContainer{
+    width: 100%;
+    margin: 30px ;
+    justify-content: space-between;
+    display: flex;
+}
+
+.skillRight {
+    width: 45%;
+}
+
+.skillLeft{
+    width: 45%;
+    margin: auto;
+}
+
+
+.scoreDesc{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.scoreDesc p , span{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.scoreRating{
+    width: 100%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.web{
+    width: 65%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px;
+}
+
+
+.htcss{
+    width: 95%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px;
+}
+
+.js{
+    width: 80%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px; 
+}
+
+
+.react{
+    width: 70%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px; 
+}
+
+.angular{
+    width: 60%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px; 
+}
+
+.bootstrap{
+    width: 99%;
+    margin-top: 10px;
+    height: 5px ;
+    background-color: #20c997;
+    border-radius: 5px; 
+}
+
+.downloadCV{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.downloadCV .download{
+    margin: 30px 0;
+    padding: 0.8rem 2.6rem;
+    border-radius: 50rem;
+    border: 1px solid #6c757d;
+    background-color: #fff;
+    color: #20c997;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.downloadCV .download:hover{
+    color: #fff;
+    background-color:#6c757d ;
+}
+
+
